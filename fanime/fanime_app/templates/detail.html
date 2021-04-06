@@ -65,6 +65,7 @@
 
     {{api_anime_id}}
     {% for comment in anime.comment_set.all %}
+    {{comment.comment}}
     {%endfor%}
 
 
