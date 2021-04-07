@@ -78,7 +78,13 @@
       <input type="submit" class="btn red darken-2" value="Add Comment">
     </form>
     {% endif %}
-
+    <br>
+    <h4 style="color:white">Comments:</h4>
+    {% for comment in user.profile.comment_set.all %}
+    <ul>
+      <li>{{comment.user}}: {{comment.comment}}</li>
+    </ul>
+    {% endfor %}
   </div>
 
   <div class="row center">
