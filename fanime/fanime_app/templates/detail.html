@@ -79,4 +79,25 @@
     </form>
     {% endif %}
 
-    {% endblock %}
+  </div>
+
+  </div>
+
+  <div class="row center">
+    <div class="col s2">
+      <form action="/profile/" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn red darken-2">FAVORITE</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div>
+    <br>
+
+  </div><br><br>
+
+
+  {% endblock %}
